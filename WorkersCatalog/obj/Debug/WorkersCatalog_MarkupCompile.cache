@@ -1,0 +1,20 @@
+﻿WorkersCatalog
+
+
+winexe
+C#
+.cs
+D:\Study\C#\ADO NET\WorkersCatalog\WorkersCatalog\obj\Debug\
+WorkersCatalog
+none
+false
+DEBUG;TRACE
+D:\Study\C#\ADO NET\WorkersCatalog\WorkersCatalog\App.xaml
+81357755993
+
+24540039664
+14549833531
+Controller\WorkerProfile.xaml;MainWindow.xaml;View\ChooseWorker.xaml;View\DatabaseConnectionWindow.xaml;View\LoggerSettingsWindow.xaml;View\ReportView.xaml;View\SearchWindow.xaml;View\WorkerEditing.xaml;
+
+False
+

@@ -1,0 +1,58 @@
+﻿<Window x:Class="WorkersCatalog.View.WorkerEditing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WorkerEditor" Height="470" Width="350" ResizeMode="NoResize">
+    
+    <StackPanel>
+        <Label Content="Worker editor" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" />
+        <Canvas>
+            <Image Name="ImgBox" Source="no-thumb.png" Width="80"  Canvas.Top="0" Canvas.Right="30"/>
+        </Canvas>
+        <Button Content="Choose worker" Margin="10 0 0 0" Width="100" HorizontalAlignment="Left" Click="OnChooseWorkerClick" />
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Name" />
+            <TextBox Width="130" Name="txtName"  Margin="21 0 0 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Surname" />
+            <TextBox Width="130" Name="txtSurname" Margin="7 0 0 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Position" />
+            <TextBox Width="130" Name="txtPosition" Margin="11 0 0 0" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Photo" />
+            <TextBox Width="130" Name="txtPhoto" Margin="20 0 0 0" />
+            <Button Content="Find" Width="50" Margin="10 0 0 0" Click="OnFindClick"/>
+            <Button Content="Upload"  Width="50" Margin="10 0 0 0" Click="OnUploadClick"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Birthday" />
+            <DatePicker Name="calendar" Width="120" Margin="150 0 0 0" SelectedDateFormat="Short" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Number of Implyment order" />
+            <TextBox Name="txtImpl" Width="40" Margin="43 0 0 0" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Date of Implyment" />
+            <DatePicker Name="calendarImpl" Width="120" Margin="94 0 0 0" SelectedDateFormat="Short" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Number of firing order" />
+            <TextBox Name="txtfire" Width="40" Margin="70 0 0 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+            <Label Content="Date of firing" />
+            <DatePicker Name="calendarFire" Width="120" Margin="120 0 0 0"  SelectedDateFormat="Short"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Add new" Margin="10 30 0 0" Click="OnAddNewClick" />
+            <Button Content="Edit data" Margin="10 30 0 0" Click="OnEditWorkerClick" />
+            <Button Content="Clear data" Margin="10 30 0 0" Click="OnClearClick"/>
+            <Button Content="Cancel" Margin="10 30 0 0" Click="OnCancelClick" />
+
+        </StackPanel>
+    </StackPanel>
+</Window>

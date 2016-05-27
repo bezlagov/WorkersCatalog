@@ -1,0 +1,35 @@
+﻿<Window x:Class="WorkersCatalog.View.LoggerSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoggerSettingsWindow" Height="350" Width="300" ResizeMode="NoResize">
+    <StackPanel>
+        <Label Content="Type of Logging" HorizontalAlignment="Center" FontWeight="Bold" />
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="20 0 0 0">
+                <CheckBox Name="chkTrace" Content="Trace" Margin="5 0 0 10" Unchecked="OnUncheckTypeOfLogging" />
+                <CheckBox Name="chkDebug" Content="Debug" Margin="5 0 0 10" Unchecked="OnUncheckTypeOfLogging"/>
+            </StackPanel>
+            <StackPanel Margin="20 0 0 0">
+                <CheckBox Name="chkWarning" Content="Warning" Margin="5 0 0 10" Unchecked="OnUncheckTypeOfLogging"/>
+                <CheckBox Name="chkError" Content="Error" Margin="5 0 0 10" Unchecked="OnUncheckTypeOfLogging"/>
+            </StackPanel>
+            <StackPanel Margin="20 0 0 0">
+                <CheckBox Name="chkFatal" Content="Fatal" Margin="5 0 0 10" Unchecked="OnUncheckTypeOfLogging"/>
+                <CheckBox Name="chkAll" Content="All" Margin="5 0 0 10"  Checked="OnAllChackedClick" Unchecked="OnAllUncheckedClick"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <Label Content="Logging place" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <CheckBox Name="chkToText" Content="To the text file" Margin="5 0 0 10" Unchecked="chkToText_Unchecked" />
+            <CheckBox Name="chkToDatabase" Content="To the database" Margin="5 0 0 10"  />
+            <CheckBox Name="chkToBinary" Content="To the binary file" Margin="5 0 0 10"  />
+            <CheckBox Name="chkToAll" Content="Logging to all" Margin="5 0 0 10" Checked="OnLoggingToAllClick" Unchecked="OnUnloggingToAllClick"/>
+
+        </StackPanel>
+        <StackPanel>
+            <Button Name="btnStart" Content="Start Logging" Click="OnStartLogging" Width="150" Margin="0 20 0 5" />
+            <Button Name="btnStop" Content="Stop Logging" Click="OnStopLiggingClick" Width="150"  Margin="0 0 0 5" IsEnabled="False" />
+            <Button Content="Cancel" Click="OnCancelClick" Width="150"  Margin="0 0 0 5" />
+        </StackPanel>
+    </StackPanel>
+</Window>

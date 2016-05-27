@@ -1,0 +1,16 @@
+﻿<Window x:Class="WorkersCatalog.View.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="320" Width="300" ResizeMode="NoResize">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Search" Margin="10 10 10 0" />
+            <TextBox Width="200" Margin="10 10 10 0"  KeyUp="OnKeyUpEvent"/>
+        </StackPanel>
+        <ListBox Height="190" Margin="10 10 10 10" Name="listWorkers" SelectionChanged="OnSelectionChanged"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Select" Margin="10 0 10 0" Click="OnSelectClick"/>
+            <Button Content="Cancel" Margin="10 0 10 0" Click="OnCancelClick"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
